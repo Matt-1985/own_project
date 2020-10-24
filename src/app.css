@@ -1,20 +1,33 @@
+:root {
+  --bg-main-color: #dcd9d4;
+  --font-main-color: #6e8191;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 :root {
   --main-bgc: #fdfcfb;
   --main-fc: #8ba7b0;
 }
 
+=======
+>>>>>>> master
 html {
   font-size: 16px;
 }
 
 body {
   margin: 0;
+<<<<<<< HEAD
   background: var(--main-bgc);
   color: var(--main-fc);
+=======
+  background: var(--bg-main-color);
+  color: var(--font-main-color);
+>>>>>>> master
 }

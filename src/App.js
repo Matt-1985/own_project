@@ -5,7 +5,7 @@ import { createElement, styled } from "./utils/elements";
 import Quotes from "./components/Quotes";
 import { getRandomQuotes } from "./utils/api";
 
-const PrimaryButton = styled(Button, "bg-primary");
+// const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
   const header = Header();
@@ -39,6 +39,7 @@ function App() {
   const container = createElement("div", {
     children: [header, main],
   });
+
   return container;
 }
 
