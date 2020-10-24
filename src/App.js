@@ -1,34 +1,43 @@
 import "./app.css";
-// import Button from "./components/Button";
-// import Header from "./components/Header";
-import { createElement } from "./utils/elements";
+import Button from "./components/Button";
+import Header from "./components/Header";
+import { createElement, styled } from "./utils/elements";
 import Quotes from "./components/Quotes";
+import { getRandomQuotes } from "./utils/api";
 
 // const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
-  const quotes = Quotes();
+  const header = Header();
+  // const quotes = Quotes();
+
+  const moreButton = PrimaryButton({
+    innerText: "Give me more Kanye",
+    onclick: () => {
+      moreKanye();
+    },
+  });
 
   const main = createElement("main", {
     className: "main",
-    children: [quotes],
+    children: [header, moreButton],
   });
 
-  async function getRandomQuotes() {
+  async function moreKanye() {
     const allQuotes = await getRandomQuotes();
-    const newQuotes = allQuotes.map((kanye) =>
-      Quotes({
-        quote: kanye.quote,
-      })
-    );
+    let quote = Quotes({
+      quote: allQuotes.quote,
+    });
+
     main.innerHTML = "";
-    main.append(...newQuotes);
+    main.append(moreButton);
+    main.append(quote);
   }
 
   getRandomQuotes();
 
   const container = createElement("div", {
-    children: [main],
+    children: [header, main],
   });
 
   return container;
