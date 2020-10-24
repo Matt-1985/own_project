@@ -5,11 +5,10 @@ import { createElement, styled } from "./utils/elements";
 import Quotes from "./components/Quotes";
 import { getRandomQuotes } from "./utils/api";
 
-// const PrimaryButton = styled(Button, "bg-primary");
+const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
   const header = Header();
-  // const quotes = Quotes();
 
   const moreButton = PrimaryButton({
     innerText: "Give me more Kanye",
