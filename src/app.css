@@ -1,11 +1,12 @@
+:root {
+  --bg-main-color: #dcd9d4;
+  --font-main-color: #6e8191;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-  --bg-primary: rgb(48, 118, 209);
 }
 
 html {
@@ -14,9 +15,6 @@ html {
 
 body {
   margin: 0;
-  background: rgb(18, 27, 27);
-}
-
-.bg-primary {
-  background: var(--bg-primary);
+  background: var(--bg-main-color);
+  color: var(--font-main-color);
 }
