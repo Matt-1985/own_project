@@ -1,9 +1,24 @@
 .button {
-  border-radius: 10px;
-  padding: 0.2em 0.5em;
-  border: 1px solid #333;
+  border: none;
+  height: 196px;
+  width: 196px;
+  border-radius: 56px;
+  background: linear-gradient(145deg, #b8be94, #9ba07c);
+  box-shadow: 20px 20px 39px #7e8265, -20px -20px 39px #dae2af;
+  font-family: "Bebas Neue", cursive;
 }
 
 .button:active {
-  background: grey;
+  background: #faffe0;
+  color: var(--main-bgc);
+  text-decoration: line-through;
+}
+
+.bg-primary {
+  margin-left: 40px;
+  color: var(--main-fc);
+  font-size: 25px;
+  background-color: #e8e8e8;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }

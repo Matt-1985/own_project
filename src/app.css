@@ -1,7 +1,4 @@
-:root {
-  --bg-main-color: #dcd9d4;
-  --font-main-color: #6e8191;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 *,
 *::before,
@@ -10,16 +7,25 @@
 }
 
 :root {
-  --main-bgc: #fdfcfb;
-  --main-fc: #8ba7b0;
+  --main-bgc: #acb28a;
+  --main-fc: #faffe0;
 }
 
 html {
   font-size: 16px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 body {
   margin: 0;
   background: var(--main-bgc);
   color: var(--main-fc);
+}
+
+.main {
+  position: relative;
 }
