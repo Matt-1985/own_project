@@ -4,12 +4,16 @@ import Header from "./components/Header";
 import { createElement, styled } from "./utils/elements";
 import Quotes from "./components/Quotes";
 import { getRandomQuotes } from "./utils/api";
+import imgSrc from "./assets/Kanye_1.png";
 
-// const PrimaryButton = styled(Button, "bg-primary");
+const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
   const header = Header();
-  // const quotes = Quotes();
+  const Kanye = createElement("img", {
+    className: "head__img",
+    src: imgSrc,
+  });
 
   const moreButton = PrimaryButton({
     innerText: "Give me more Kanye",
@@ -20,7 +24,7 @@ function App() {
 
   const main = createElement("main", {
     className: "main",
-    children: [header, moreButton],
+    children: [header, moreButton, Kanye],
   });
 
   async function moreKanye() {

@@ -1,8 +1,9 @@
 .header {
   height: 64px;
   display: flex;
-}
-
-.header > img {
-  height: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  font-size: 40px;
 }
