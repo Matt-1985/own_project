@@ -1,19 +1,32 @@
 .quote__text {
   display: flex;
-  padding-top: 100px;
+  padding-top: 85px;
+  text-align: center;
   justify-content: center;
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  position: absolute;
-  width: 250px;
+  width: 300px;
   height: 175px;
   top: 200px;
   left: 250px;
 }
 
 .head__img {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  justify-content: right;
   width: 620px;
   height: 384px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.quote__container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 300px;
+  width: 300px;
+  height: 175px;
+  border-radius: 50px;
+  background: #acb28a;
+  box-shadow: inset 20px 20px 60px #929775, inset -20px -20px 60px #c6cd9f;
 }

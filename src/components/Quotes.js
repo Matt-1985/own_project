@@ -7,7 +7,12 @@ function Quotes({ quote }) {
     innerText: quote,
   });
 
-  return quoteText;
+  const quoteContainer = createElement("div", {
+    className: "quote__container",
+    children: [quoteText],
+  });
+
+  return quoteContainer;
 }
 
 export default Quotes;

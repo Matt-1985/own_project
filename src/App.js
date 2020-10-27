@@ -27,6 +27,8 @@ function App() {
     children: [header, moreButton, Kanye],
   });
 
+  moreKanye(); //funktion vorher aufrufen, damit garantiert ist das quoutes schon vorher erscheinen
+
   async function moreKanye() {
     const allQuotes = await getRandomQuotes();
     let quote = Quotes({
